@@ -5,7 +5,8 @@
             // These are the defaults.
             placeholderColor: "#898989",
             labelColor: "#4AA2CC",
-            labelSize: this.css('font-size'),
+            labelSize: "16px",
+            placeholderSize: "16px",
             fontStyle: "normal",
             useBorderColor: true,
             inInput: true,
@@ -33,7 +34,7 @@
                 BindOnData(self.prev(), self, pt);
             }
             var currentBorderColor = self.css('border-color');
-            var currentPlaceholderSize = self.css('font-size');
+            var currentPlaceholderSize = settings.placeholderSize;
             if(self.attr('placeholder')){
             
                 var label = $('<label></label>');
